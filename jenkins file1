@@ -5,14 +5,14 @@ pipeline
 		 {
 		    stage('clone')
 			{
-			   step{
+			   steps{
                     sh 'echo clone'			      
 				   }
 			}
 			
 			stage('test cases')
 			{
-			    step{
+			    steps{
 				
 				   sh 'echo test cases'
 				    }
@@ -20,7 +20,7 @@ pipeline
 			
 			stage('build')
 			{
-			    step{
+			    steps{
 				    sh 'echo build'
 				    }
 			
